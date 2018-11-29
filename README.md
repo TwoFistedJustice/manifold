@@ -66,3 +66,29 @@ Some maintenance is standard, same on every vehicle, some is not. Need to be abl
 
 
 
+# Trying to understand Fractal Pattern as it relates to this app
+
+"odm" is the Object Document Mapper aka Mongo/mongoose. 
+It contains the schemas and models, but no logic.
+
+"actions" are the methods, statics, and pre on a given schema ???
+
+"middleware" is normal middleware
+  - not sure if I should break it out according to models or dump it all in index???
+  
+  
+  "helpers" are functions that don't fall into other categories
+   -- this may not be needed
+  
+  "routes" - is where I define routes: gets, posts, etc
+  
+  
+  # Build Phase I
+  Include: models, server, routes (GET, POST, DELETE) 
+  Exclude: auth
+Goal: Create a m
+
+
+
+
+
