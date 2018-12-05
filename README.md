@@ -57,6 +57,8 @@ Some maintenance is standard, same on every vehicle, some is not. Need to be abl
 - Users should be able to add a repair manual page/section to a service.
 - have an API so others can integrate with us.
 - Add a marketplace
+- MODELS TO ADD
+  + Vehicle Design Flaows - allow users to specify something as a DF. When so many do, it becomes a thing.
 
 # Types of data we need to have
 
