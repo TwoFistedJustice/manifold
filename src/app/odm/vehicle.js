@@ -1,18 +1,26 @@
 const mongoose = require ('mongoose');
 const {Schema} = mongoose;
 const {ObjectID} = Schema.types;
-const latestModelYear = new Date().getUTCFullYear() + 1;
+
+// don't import everything from index bc that may cause bugs
+// as it would import THIS file into THIS file
+const {UserProfile} = require('./index');
+
+
+
+const latestModelYear = new Date().getUTCFullYear() + 2;
 // import user from index???
 
 
 const vehicle = new Schema ({
   owner: {
    type: ObjectID,
-    // ref: 'User' // foreign key to User model
+    ref:'UserProfile'
   },
   vin: {
     type: String,
-    required: true,
+    required: false,
+    default: 'Please add this soon',
     minlength: 1,
     trim: true
   },
@@ -21,7 +29,7 @@ const vehicle = new Schema ({
     type: Number,
     required: true,
     min: 1885,
-    max: latestModelYear + 1
+    max: latestModelYear
   },
   make: {
     type: String,
@@ -37,7 +45,8 @@ const vehicle = new Schema ({
   },
   color: {
     type: String,
-    required: true,
+    required: false,
+    default: 'Black',
     minLength: 1,
     trim: true
   },
@@ -49,7 +58,8 @@ const vehicle = new Schema ({
   // example would be cc, liters, or cubic inches (CID)
   engineDisplacementUnits: {
     type: String,
-    required: true,
+    required: false,
+    default: 'L',
     min: 0
   },
   licensePlate: {
@@ -91,8 +101,6 @@ const vehicle = new Schema ({
     required: false,
     default: false
   }
-  
-  
   
 });
 
