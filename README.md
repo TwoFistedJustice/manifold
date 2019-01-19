@@ -1,4 +1,4 @@
-# Manifold -- a database app for my car
+# Manifold -- Vehicle Maintenance
 
 # The Story
 
