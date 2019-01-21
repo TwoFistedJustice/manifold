@@ -1,5 +1,21 @@
 # Definitions
 
+## Manifold
+From the Oxford English Dictionary:
+- Many and various.
+
+- The part conveying air and fuel from the carburettor to the cylinders
+or that leading from the cylinders to the exhaust pipe.
+
+- A collection of points forming a certain kind of set, such as those of a
+  topologically closed surface or an analogue of this in three or more dimensions.
+
+
+- The sum of the particulars furnished by sense before they have been unified
+   by the synthesis of the understanding.
+
+
+
 ### Person
 A Person is a human who uses our software.
 
