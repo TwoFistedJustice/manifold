@@ -17,11 +17,11 @@ or that leading from the cylinders to the exhaust pipe.
 
 
 ### Person
-A Person is a human who uses our software.
+A Person is a human who is a "user" of our software.
 
 ### User
-A User is a collection of data representing one Person. A user will have one or more
-"Vehicles".
+A User is a collection of data representing one person. A user will have one or more
+"vehicles".
 
 
 ### Vehicle
@@ -36,6 +36,8 @@ A Vehicle may be transferred from one User to another. The previous ownder will 
 to any information about a vehicle which they previously had, but not to data a future owner
 creates.
 
+In the course of maintaining a vehicle, a user will need to complete many "projects".
+
 ### Project
 A Project is a collection of data storing a user's broad goals.
 
@@ -44,7 +46,7 @@ Think of goals, such as "to rebuild the suspension", "Lower the car two inches",
 "Bore the engine 0.2L over". These are all broad aspirations which would require
 mulitple complicated procedures, each with its own separate set of procdures. In
 order to acheive the overall goal, one must complete many smaller, yet still complex
-jobs.
+"jobs".
 
 ### Job
 A Job is a collection of data storing the parts, tools, and optionally the steps necessary
@@ -53,6 +55,8 @@ to complete a complex procedure.
 In our analog world, a job is something like "Service drum brakes",  "Fix a coolant leak",
 "Replace the front struts", "Change the clutch". It should be granular enough to be easily
 comprehensible, yet still have complexity.
+
+Sometimes to make repeating a job in the future easier, a user may want to record some "tips".
 
 ### Tips
 A Tip is a collection of data storing the ideas and experience of users which will help to
@@ -69,8 +73,8 @@ complicated to set up.
 #### Clarification
 
 ##### Projects vs Jobs
-"Change the struts" would be a "Project", consisting of the "Jobs"
+"Change the struts" would be a "Project", consisting of the "jobs"
 "Change the front struts" and "Change the rear struts".
 
- "Rebuild the brakes" would be a "Project" consising of the "Jobs", "Service the front disc
+ "Rebuild the brakes" would be a "Project" consising of the "jobs", "Service the front disc
  brakes", "Service the rear drum brakess", "Rebuild the master cylinder", and "Replace the rubber brake lines".
