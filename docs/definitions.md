@@ -32,7 +32,7 @@ such as water, air, or space craft. (let's look to future and be ready for it). 
 also bear in mind that electric vehicles are now mainstream and people are beginning to
 service them at home.
 
-A Vehicle may be transferred from one User to another. The previous ownder will retain access
+A Vehicle may be transferred from one User to another. The previous owner will retain access
 to any information about a vehicle which they previously had, but not to data a future owner
 creates.
 
@@ -41,7 +41,7 @@ In the course of maintaining a vehicle, a user will need to complete many "proje
 ### Project
 A Project is a collection of data storing a user's broad goals.
 
-Think of goals, such as "to rebuild the suspension", "Lower the car two inches",
+Think of goals, such as "Rebuild the suspension", "Lower the car two inches",
 "Install a catback exhaust", "Dampen vibrations inside the passenger compartment',
 "Bore the engine 0.2L over". These are all broad aspirations which would require
 mulitple complicated procedures, each with its own separate set of procdures. In
