@@ -90,6 +90,24 @@ It contains the schemas and models, but no logic.
   Exclude: auth
 Goal: Create a m
 
+# File Structure
+
+### /src 
+  All the source code goes here
+
+### src/actions
+  Mongoose model instance methods, class static methods, and middleware go here, 
+  each in their own directory.
+ 
+### src/odm
+  Mongoose models and schemas are kep here.
+
+### src/routes
+  Express routers are kept here. 
+
+
+  
+
 
 
 
