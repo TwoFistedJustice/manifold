@@ -1,3 +1,4 @@
+/*
 // a repair issue is a known problem with the vehicle.
 
 
@@ -7,7 +8,7 @@
 // System affected: In which system does the problem originate - string
 // Part suspected: What part do you think is causing the issue - string
 
-/// What will fix the problem permanently - string
+
 
 // Are there other repairs that are necessary or convenient to do along the way - boolean
   // Repair series: object ID of the repair series this doc belongs to.
@@ -16,10 +17,21 @@
 
 // What parts are needed?
 
-// What special tools are needed?
+
 
 // completed: bool def- false
+  - setting this to 'true' should mark any replacement part's 'repair' property
+  to false and vice versa
 
 // odometer when discovered
 // date discovered: def-date now
 
+'remedy' - What will fix the problem permanently - string
+  - should auto gen, but be editable by the user
+
+Some aspects of this should be pulled from the 'parts' needed
+// What special tools are needed? - pulled from
+
+
+
+*/
