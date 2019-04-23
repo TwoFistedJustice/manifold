@@ -8,7 +8,29 @@ because it allowed him to know what he had done, what worked, what didn't, and h
 do it again when he forgot. It also helped him to not buy duplicate parts or tools he
 didn't really need. But as the notebooks got thicker and denser, it became harder and
 harder to organize and find what he had written. He needed something better, but nothing
-better existed. So he decided to build it.  
+better existed. So he decided to build it.
+
+# Operating Principles
+
+#### User DRY (uDRY)
+Whenever possible we will anonymously aggregate certain types of data in order to prompt
+users when adding Repair Issues and Service Reports. The data types in question will be
+vehicle related: part numbers, brands, tools used, tips and tricks, etc.
+
+##### Wireframing and pseudo coding
+Before writing ANY code for a model or route, there should be detailed summary at the top
+of the file containing declarations stating what it is and what it should be able to do.
+Declarations should be modeled after unit testing statements should be atomic and should\\
+ begin with "It should...(do something)" 
+
+#### Code Style Guide
+- It should be double space indented.
+- It should ALWAYS use semi-colons.
+- It should ALWAYS express functions as variables to prevent function hoisting and spaghetti code. 
+- It should NEVER declare functions. ie. function Myfunction(){//do something}
+- In general it should follow the AirBnb style guide, but Webstorm default is nearly the same
+ and easier to set up, so in practice that is what I am using, except for the double-space indent.
+
 
 # Directory Structure
 

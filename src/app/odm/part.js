@@ -1,4 +1,10 @@
 /*
+* This may not be necessary. It might be more efficient to use a property in a Service Report.
+* OR it might be useful to create this when a user adds a part to a Service Report, requiring
+* a brand and part number, then having it be unique. Then the part can be prompted to users
+* later when they add a Service Report or create a shopping list from a Repair Issue thus
+* respecting user DRY.
+*
 * this plug in allows mongoose to extend schemas. May be useful for this feature
 * https://github.com/briankircho/mongoose-schema-extend
 *

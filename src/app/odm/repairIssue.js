@@ -1,37 +1,44 @@
-/*
-// a repair issue is a known problem with the vehicle.
-
-
-// Description: briefly, what do you think is wrong? -string
-// Symptoms: What is happening that should not be, or is not that should be? - string
-
-// System affected: In which system does the problem originate - string
-// Part suspected: What part do you think is causing the issue - string
-
-
-
-// Are there other repairs that are necessary or convenient to do along the way - boolean
-  // Repair series: object ID of the repair series this doc belongs to.
-  // If none is chosen, one is created by default. Can be changed later.
-  
-
-// What parts are needed?
-
-
-
-// completed: bool def- false
-  - setting this to 'true' should mark any replacement part's 'repair' property
-  to false and vice versa
-
-// odometer when discovered
-// date discovered: def-date now
-
-'remedy' - What will fix the problem permanently - string
+/* A Repair Issue records a known problem with the vehicle.
+*
+*  It should record symptoms. .ie. What is happening that should not be, or is not that should be?
+ *  - string
+*
+*  It should record what the user suspects is the problem.
+*  - string
+*
+* It should record the system(s) affected
+*  - string, possibly api pull
+*  - this property will be read when recording a Service Report
+*
+* It should record the part(s) the user expects to replace.
+*  - string
+*  - These parts will be *prompted* to the user when recording a Service Report to respect DRY
+*
+*  It should record any repair services which are required or convenient to perform when doing
+*  this repair. These can be pulled and prompted from aggregate anonymous user data.
+*
+*  It should link to a Repair Series ObjectId. If none is chosen, one is created by default. It
+*  should be able to be changed by the user later.
+*
+*  It should record whether the issue is completed.
+*  - bool def- false
+*
+* It should record the date completed.
+*  - timestamp, def- now, can be set by user.
+*
+*  It should record the odometer reading when first noticed.
+*
+*  It should record the odometer reading when completed.
+*
+*  It should have a 'remedy' propery which records What will fix the problem permanently
+*  - string
   - should auto gen, but be editable by the user
+*
+*  It should record any special tools required. These will be *prompted* to the user
+*  when creating an associated Service Report
+*
+*  It should be able to generate a "shopping list" of parts for the user.
+*
+*
+* */
 
-Some aspects of this should be pulled from the 'parts' needed
-// What special tools are needed? - pulled from
-
-
-
-*/
