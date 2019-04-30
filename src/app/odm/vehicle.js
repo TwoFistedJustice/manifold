@@ -5,10 +5,26 @@
 *  leave enough flexibility to expand the app into other specialties like watercraft, aircraft,
 *  Federation starships, etc.
 *
-*
 *  Doing it that way would complicate the building of routes since we would need to take into account
-*  all the different types of vechicles. Really we would need to set a prop and call the appropriate
+*  all the different types of vehicles. Really we would need to set a prop and call the appropriate
 *  classes and helpers. Still, it's a lot of code to write and maintain....
+*
+*  It might be simpler to have one Vehicle supertype with a subtype field, then that field is used
+*  to subdivide parts and such. Adding a type field to a part, then filling it from the vehicle type
+*  owning the part, it duplicates a little, but it may eliminate the need to have a thousand routes and
+*  helpers to maintain.
+*
+*  It should have an Owner substructure.
+*
+*  It should have a traceable chain of owners for every vehicle.
+*  An owner chain should have the the beginning and ending dates and odometer readings.
+*  An owner chain should not be mutable by a user. It is changed only when a vehicle is
+*  created, transferred, or destroyed.
+*  An owner
+*
+*  It should add the most recent owner to the owner chain prior to adding a new owner.
+*
+*  It should NOT be possible to create a vehicle without first creating a user profile
 *
 * */
 
