@@ -87,7 +87,16 @@ Some maintenance is standard, same on every vehicle, some is not. Need to be abl
 - Make/Model of vehicles
 - Part manufacturer brand names
 - Part names, with user ratings for brand and model
+- Files - user uploads
 
+
+# File Uploads
+Users will obviously want to upload images for profiles and Vehicles. It may
+also be helpful to users to allow them to upload PDFs of their part purchases,
+though this may cause bloated data storage. So it might be preferable to come
+up with some kind of data format so parts vendors can export data easily and 
+directly, or alternatively, someone can develop a plug-in for a given parts store.
+Like the RockAuto plug in, or Advanced Auto Parts plug in.
 
 
 # Trying to understand Fractal Pattern as it relates to this app
