@@ -4,6 +4,7 @@
 * It should take a standard form for all vehicle types.
 *
 * It should record the odometer reading at the time the service is performed.
+* It should record the date of the service.
 *
 * It should record the system serviced.
 *
@@ -12,8 +13,8 @@
 * by the user. When linking to a Service Issue, is should pull system information from
 * that Service Issue, thus respecting user DRY.
 *
-* It should have an object property for parts used which records the brand, manufactuer
-* part number, the vendor, and the price paid. These will be collected as aggregaged data
+* It should have an object property for parts used which records the brand, manufacturer
+* part number, the vendor, and the price paid. These will be collected as aggregated data
 * for both monetization and helping others to complete the job. One way to collect the data
 * will be to look for patterns of parts being frequently replaced and correlating the brand
 * and vendor.
