@@ -1,0 +1,12 @@
+@startuml
+class User {
+  {field} email (String, required, unique)
+  {field} hashedPassword (String, required, unique)
+  {field} tokens (array)
+  {method} Some method
+}
+@enduml
+
+
+
+

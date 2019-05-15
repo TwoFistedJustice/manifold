@@ -1,0 +1,20 @@
+@startuml
+class Vehicle {
+{field} <b>Properties</b>
+owner: ObjectId
+vin: String
+year: Number
+make: String
+model: String
+color: String
+engineDisplacement: Number
+licensePlate: String
+dateAcquired: Date
+purchasePrice: Number
+{method}<b>Methods</b>
++some public method()
+-some private method()
+}
+
+
+@enduml

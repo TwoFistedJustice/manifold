@@ -1,0 +1,15 @@
+@startuml
+
+class userProfile {
+{field} Object[] name
+{field} handle
+
+{method} someMethod
+}
+
+object name {
+first
+last (family)
+}
+
+@enduml
