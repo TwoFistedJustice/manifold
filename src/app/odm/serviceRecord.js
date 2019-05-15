@@ -1,5 +1,5 @@
 /*
-* A service report records a service performed on the vehicle.
+* A Service Record records a service performed on the vehicle.
 *
 * It should take a standard form for all vehicle types.
 *
