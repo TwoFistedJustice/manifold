@@ -1,6 +1,6 @@
 @startuml
 class Vehicle {
-{field} <b>Properties</b>
+{field} <b>Fields</b>
 owner: ObjectId
 vin: String
 year: Number
@@ -11,6 +11,7 @@ engineDisplacement: Number
 licensePlate: String
 dateAcquired: Date
 purchasePrice: Number
+
 {method}<b>Methods</b>
 +some public method()
 -some private method()

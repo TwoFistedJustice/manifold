@@ -1,15 +1,18 @@
 @startuml
 
 class userProfile {
-{field} Object[] name
-{field} handle
+{field} <b>Fields</b>
+name: Object[]
+handle: String
 
-{method} someMethod
+{method}<b>Methods</b>
++some public method()
+-some private method()
 }
 
 object name {
-first
-last (family)
+first: String
+last: String
 }
 
 @enduml
