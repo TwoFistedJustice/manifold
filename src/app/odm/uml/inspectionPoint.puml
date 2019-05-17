@@ -3,7 +3,7 @@
 RepairIssue <|-- InspectionPoint
 
 class InspectionPoint {
-{field}<b>Fields</b>
+{field}**Fields**
 system: String or ObjectId
 part: String or ObjectId
 date: Date
@@ -11,7 +11,7 @@ odometer: Number
 wearLevel: Number
 conclusion: String
 shouldCreateRepairIssue: Bool: def False
-{method}<b>Methods</b>
+{method}**Methods**
 - createRepairIssue(shouldCreateRepairIssue)
 - attachToRepairIssue(this._id, that._id)
 }
