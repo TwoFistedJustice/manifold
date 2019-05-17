@@ -1,6 +1,6 @@
 @startuml
 class Vehicle {
-{field} <b>Fields</b>
+{field} **Fields**
 owner: ObjectId
 vin: String
 year: Number
@@ -11,11 +11,30 @@ engineDisplacement: Number
 licensePlate: String
 dateAcquired: Date
 purchasePrice: Number
+repairManual: Object{}
 
-{method}<b>Methods</b>
+{method}**Methods**
 +some public method()
 -some private method()
 }
+
+
+object repairManual{
+title : String
+edition : String
+publisher : String
+}
+
+
+
+note top
+Assume user has one
+primary repair manual
+end note
+
+
+repairManual -> Vehicle
+
 
 
 @enduml
