@@ -1,0 +1,36 @@
+@startuml
+
+
+class RepairIssue {
+{field}<b>Fields</b>
+
+symptoms [array of Strings]
+affectedSystems: Array of Strings
+partsToReplace: Array of Parts
+serviceOpportunities: Array of Strings
+prognosis: String
+completed: bool
+dateCompleted: Date
+odometerNoticed: number
+odometerCompleted: number
+remedies: Object{}
+pageOfManual: Number
+
+
+
+{method}<b>Methods</b>
+- generateShoppingList()
+- getSpecialTools()
+- addToRepairSeries()
+}
+
+
+note right
+|addToRepairSeries()|
+might number better
+done from
+""odm/repairSeries.js""
+end note
+
+
+@enduml
