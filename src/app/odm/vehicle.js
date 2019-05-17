@@ -26,6 +26,8 @@
 *
 *  It should NOT be possible to create a vehicle without first creating a user profile
 *
+*  It should record which repair manuals the user uses for this vehicle.
+*
 * */
 
 const mongoose = require ('mongoose');
