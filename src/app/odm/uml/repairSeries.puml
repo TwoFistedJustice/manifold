@@ -1,0 +1,37 @@
+@startuml
+
+
+class RepairSeries {
+{field}**Fields**
+queue: Object[]
+complete: bool
+
+{method}**Methods**
+- changeQueueOrder()
+- checkAllCompleteStatus()
+}
+
+note right
+each time a RepairIssue:complete is toggled
+each task in the repair series is checked.
+When all are complete, the series complete
+is changed to true. If any are incomplete,
+the series complete is changed to false.
+end note
+
+
+object queue{
+job: Object{}
+}
+
+object job {
+id: repairIssue ObjectID
+complete: bool
+}
+
+RepairSeries -> queue
+queue ...> job
+
+
+
+@enduml
