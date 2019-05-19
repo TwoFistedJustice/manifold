@@ -1,5 +1,5 @@
 @startuml
-
+title  RepairIssue Schema
 
 class RepairIssue {
 {field}<b>Fields</b>

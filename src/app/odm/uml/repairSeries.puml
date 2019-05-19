@@ -1,5 +1,5 @@
 @startuml
-
+title RepairSeries Schema
 
 class RepairSeries {
 {field}**Fields**
@@ -14,10 +14,11 @@ complete: bool
 note right
 each time a RepairIssue:complete is toggled
 each task in the repair series is checked.
-When all are complete, the series complete
-is changed to true. If any are incomplete,
-the series complete is changed to false.
+When all are complete, the RepairSeries:complete
+is changed to true. If any become incomplete,
+the RepairSeries:complete is changed to false.
 end note
+
 
 
 object queue{
@@ -31,7 +32,5 @@ complete: bool
 
 RepairSeries -> queue
 queue ...> job
-
-
 
 @enduml

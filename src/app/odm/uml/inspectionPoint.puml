@@ -1,6 +1,5 @@
 @startuml
-
-RepairIssue <|-- InspectionPoint
+title InspectionPoint Schema
 
 class InspectionPoint {
 {field}**Fields**
@@ -23,4 +22,6 @@ RepairIssue...N1
 
 
 note "system and parts fields might be\nfilled by an API call. See\nfilled see partstech.com" as N3
+
+RepairIssue <|-- InspectionPoint
 @enduml

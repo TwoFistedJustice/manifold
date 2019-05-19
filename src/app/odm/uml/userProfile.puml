@@ -1,5 +1,5 @@
 @startuml
-
+title  UserProfile Schema
 class userProfile {
 {field} <b>Fields</b>
 name: Object[]

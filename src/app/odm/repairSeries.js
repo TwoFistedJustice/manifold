@@ -18,7 +18,7 @@
 * -bool def-false
 *
 *  It should record the odometer reading upon completion. This can be pulled from the last
-*  Repair Issue marked as complete.
+*  Repair Issue marked as complete. - Actually, no. This seems like repeating oneself.
 *
 *  It should record the date completed.his can be pulled from the last
 *  Repair Issue marked as complete.

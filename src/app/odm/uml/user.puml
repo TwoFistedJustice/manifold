@@ -1,4 +1,6 @@
 @startuml
+title  User Schema
+
 class User {
   {field} <b>Fields</b>
   email:String
