@@ -1,0 +1,23 @@
+@startuml
+title ServiceRecord schema
+
+
+class ServiceRecord {
+{field}**Fields**
+odometer: Number
+system: String or ObjectId
+repairIssue: ObjectId
+parts: Array[]
+toolsCommon: Array[]
+toolsSpecial: Array[]
+whatILearned: String
+
+
+{method}**Methods**
+-linkToRepairIssue(ObjectId)
+
+
+}
+
+
+@enduml
