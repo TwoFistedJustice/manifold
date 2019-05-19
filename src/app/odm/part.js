@@ -1,4 +1,9 @@
 /*
+* I'm thinkig that 'parts' should be a whole different DB with its own back end.
+* And that this Part model would link to that DB. Maybe have this just be an ID to
+* a document in that other db
+*
+*
 * This may not be necessary. It might be more efficient to use a property in a Service Report.
 * OR it might be useful to create this when a user adds a part to a Service Report, requiring
 * a brand and part number, then having it be unique. Then the part can be prompted to users

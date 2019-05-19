@@ -48,5 +48,9 @@
 *
 *   It should fetch tips that others have come up for the same job
 *
+*   It should have a method which generates a Service Record and sets completed to true.
+*
+*  It should have a way for users to add helpful tips they want to record for later or share
+*  with others.
 * */
 

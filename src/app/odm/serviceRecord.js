@@ -23,8 +23,10 @@
 * done.
 *
 * It should record any special tools that were used. This will be anonymously aggregated and
- * prompted other users to respect DRY. It should give the user the option of recording the
- * brand and part number of the tool and allow them to rate the tool. Aggregate ratings may be
- * displayed to a user seeking information prior to a performing a repair.
+* prompted other users to respect DRY. It should give the user the option of recording the
+* brand and part number of the tool and allow them to rate the tool. Aggregate ratings may be
+* displayed to a user seeking information prior to a performing a repair.
+*
+* It should have a whatILearned property so uers can record what they learned.
 *
 * */
