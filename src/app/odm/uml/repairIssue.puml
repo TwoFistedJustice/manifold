@@ -23,6 +23,7 @@ pageOfManual: Number
 - getSpecialTools()
 - addToRepairSeries()
 - generateServiceRecord()
+- addTipsAndTricks()
 }
 
 
