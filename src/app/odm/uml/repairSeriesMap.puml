@@ -1,0 +1,29 @@
+@startmindmap
+* User: John
+** Vehicle 1
+*** Repair Series:\n{complete: **false**}
+**** Repair Issue:\nthing1 is broken
+***** Service Record:\nthing1 has been fixed
+**** Repair Issue:\nthing2 is broken
+***** Service Record:\nthing2 has been fixed
+**** Repair Issue:\nthing3 should be \nreplaced with thing2
+***** Service Record:\nthing3 has been replaced
+**** Repair Issue:\nthing4 is now accessible,\nmight as well replace it
+** Vehicle 2
+*** Repair Series:\n{complete: **true**}
+**** Repair Issue:\nthing1 is broken
+***** Service Record:\nthing1 has been fixed
+**** Repair Issue:\nthing2 is broken
+***** Service Record:\nthing2 has been fixed
+**** Repair Issue:\nthing3 should be \nreplaced with thing2
+***** Service Record:\nthing3 has been replaced
+**** Repair Issue:\nthing4 is now accessible,\nmight as well replace it
+***** Service Record:\nthing4 has been replaced
+
+
+
+
+
+
+
+@endmindmap
