@@ -38,6 +38,17 @@ Model on Fractal Pattern by Kapil Verma
 
 https://codeburst.io/fractal-a-nodejs-app-structure-for-infinite-scale-d74dda57ee11
 
+# Universal Modeling Language
+Each coding directory should have a sub-directory called "uml" which exists only in the uml branch.
+Schemas, relationships, routes, sequences should all be modeled in UML using the planttuml language
+prior to writing any code. Webstorm has a plugin for UML called "plantUMl Integration". This is
+recommended for use with this repo.
+
+Branch master should occasionally be PULLed in to branch uml. But the reverse is
+NOT true. Need to find way to exclude UML folders from production so they can be
+used as references while working in other branches.
+
+
 # Stack - Initial
 Node, Express, Mongo, Postman
 
