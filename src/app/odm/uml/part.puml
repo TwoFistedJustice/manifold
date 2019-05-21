@@ -3,7 +3,6 @@
 title Part Schema
 
 
-
 class Part{
 {field}**Fields**
 **//Immutable Properties//**
@@ -18,9 +17,10 @@ recommendedTorque: Object{}
 
 **//Cumulative Properties//**
 userRating: Number
-compatibleVehicles: Object
+compatibleVehicles: Collection of Vehicles
 fitmentNotes: Collection of Notes
 
+//** The below properties should form their own class or subclass**//
 **//Mutable Properties//**  - User input only
 vendor: String
 purchasePrice: Number
@@ -48,16 +48,10 @@ newtonMeters: Number
 
 }
 
-object compatibleVehicles {
+note as N1
+  This will be broken into separate classes
+end note
 
-
-}
-
-object fitmentNotes{
- see abstract collection
-}
-
-object failureNotes{
-}
+N1 -- Part
 
 @enduml
