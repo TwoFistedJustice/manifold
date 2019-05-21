@@ -4,6 +4,14 @@
 *
 * This is probably going to be the most difficult part of the whole project to code.
 *
+* As written now there is one class called a Part. There should be TWO.
+* A SuperClass, which records Immutable and Cumulative properties
+* And a SubClass which handles the rest and is stored separately.
+*
+* The SuperClass will have exactly one instance in the DB, whereas the SubClass will
+* have MANY creating a one-to-many relationship between them.
+*
+*
 * parts will probably only be created by a user when they are either defective or upgraded.
 *
 *  the following properties are drawn and set from the user's vehicle schema
