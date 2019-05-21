@@ -4,6 +4,14 @@
 *
 * This is probably going to be the most difficult part of the whole project to code.
 *
+* As written now there is one class called a Part. There should be TWO.
+* A SuperClass, which records Immutable and Cumulative properties
+* And a SubClass which handles the rest and is stored separately.
+*
+* The SuperClass will have exactly one instance in the DB, whereas the SubClass will
+* have MANY creating a one-to-many relationship between them.
+*
+*
 * parts will probably only be created by a user when they are either defective or upgraded.
 *
 *  the following properties are drawn and set from the user's vehicle schema
@@ -36,9 +44,9 @@
 
   * Cumulative Properties -
 *  ----------------------------------------------------------
-* It should have a user rating from 1 through 5
+* It should have a user rating from 1 through 5 - an object with an average rating and number of ratings
 * It should have a compatible vehicles list : Object{make/model/year}
-* It should have a list of fitment notes : Objects{ make/model/year, description"}\
+* It should have a collection of fitment notes : Objects{ make/model/year, description"}\
 *   - Note make/model/year duplication - solve by new data store??? - mission creep!
 *
 
@@ -46,8 +54,8 @@
 *  ----------------------------------------------------------
 *  It should record where it was purchases
 *  It should record the purchase price before tax
-*  It should have a list of Failure Notes
-*    ("the rubber boot broke", "the rubber bushing wore out", "the temperature sensor went bad", "incorrect installation"
+*  It should have a collection of Failure Notes
+*    ("the rubber boot broke", "the rubber bushing wore out", "the temperature sensor went bad", "incorrect installation")
 
 
 *
