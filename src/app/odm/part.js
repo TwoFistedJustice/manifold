@@ -44,7 +44,7 @@
 
 * Cumulative Properties -
 *  ----------------------------------------------------------
-* It should have a user rating from 1 through 5
+* It should have a user rating from 1 through 5 - an object with an average rating and number of ratings
 * It should have a compatible vehicles list : Object{make/model/year}
 * It should have a collection of fitment notes : Objects{ make/model/year, description"}\
 *   - Note make/model/year duplication - solve by new data store??? - mission creep!
