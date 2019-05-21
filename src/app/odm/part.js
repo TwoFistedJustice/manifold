@@ -1,3 +1,4 @@
+//Todo break this up into two classes as laid out in the UML partMaster and partReplacement
 /*
 * this plug in allows mongoose to extend schemas. May be useful for this feature
 * https://github.com/briankircho/mongoose-schema-extend
