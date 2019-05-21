@@ -12,7 +12,5 @@
 *  It should record the ObjectId of the creating object
 *  It should record the purpose (fitment, failure, tip, etc)
 *    This will probably be passed as an argument by the generating class
-*  It should record the class name of the creating object
-*    So it can be ind
 *
 * */
