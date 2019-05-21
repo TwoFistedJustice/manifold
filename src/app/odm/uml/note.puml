@@ -1,0 +1,17 @@
+@startuml
+title Note Schema
+
+class Note {
+{field}**Fields**
+text: String
+author: ObjectId
+creatingObject: ObjectId
+purpose: String
+
+
+{method}**Methods**
+
+
+}
+
+@enduml
