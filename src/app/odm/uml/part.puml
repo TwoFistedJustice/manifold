@@ -16,7 +16,7 @@ recommendedThreadLocker: String
 recommendedTorque: Object{}
 
 **//Cumulative Properties//**
-userRating: Number
+userRating: Object
 compatibleVehicles: Collection of Vehicles
 fitmentNotes: Collection of Notes
 
@@ -45,7 +45,12 @@ object recommendedTorque {
 poundInches: Number
 poundFeet: Number (12 times poundIncehs)
 newtonMeters: Number
+}
 
+object userRating {
+averageRating: Number
+sumOfAllRatings: Number
+countOfRatings: Number
 }
 
 note as N1
