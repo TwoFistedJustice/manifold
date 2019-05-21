@@ -26,7 +26,7 @@ Declarations should be modeled after unit testing statements should be atomic an
 #### Code Style Guide
 - It should be double space indented.
 - It should ALWAYS use semi-colons.
-- It should ALWAYS express functions as variables to prevent function hoisting and spaghetti code. 
+- It should ALWAYS express functions as variables. 
 - It should NEVER declare functions. ie. function Myfunction(){//do something}
 - In general it should follow the AirBnb style guide, but Webstorm default is nearly the same
  and easier to set up, so in practice that is what I am using, except for the double-space indent.
