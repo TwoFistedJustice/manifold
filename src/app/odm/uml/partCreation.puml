@@ -1,0 +1,23 @@
+@startuml
+
+title Part Creation
+
+
+start
+
+:Create Repair Issue;
+note right: All Parts begin life here
+
+
+if (Does the Master Part exist in the DB?) then (**     Yes**)
+
+else (\n**No**\n)
+  :Create a new **Master Part**\nin the Database;
+
+endif
+
+:Create a **Replacement Part** \nwith a ref to the Master Part;
+
+stop
+
+@enduml
