@@ -1,4 +1,7 @@
 //Todo this file (part.js) is now only for notes on the relationship between Master and Replacement Parts
+
+//Todo the UML diagrams for part classes will need to be redone to reflect changes in structure
+
 /*
 * this plug in allows mongoose to extend schemas. May be useful for this feature
 * https://github.com/briankircho/mongoose-schema-extend
@@ -93,24 +96,46 @@ fasteners: {
    averageRating: 4.578348372626,
    numberOfRatings: 26
  },
- compatibleVehicles: { },
- fitmentNotes: {}
- failureNotes: {}
+ compatibleVehicles: { not sure how best to do this yet},
+ fitmentNotes: {collection of notes}
+ failureNotes: {collection of notes}
  
 }
 
  __________________REPLACEMENT PART______________________________
 
+There needs to be a way to know if a part has already been recorded
+so dates and odos can be recorded without duplication.
+
+we can check for a date of failure, since that will not exist on a
+part that is in service.
+
+But there MUST be a way to make sure a part is not duplicated by
+accident. Otherwise someone can just add infinite tie rods to a car,
+which will render that data set pretty useless, even to the user.
+This has potential to wreck the project with complexity. So simplicity
+in implementation is essential.
+
+It could be as simple as adding a boolean property to a vehicle when a
+part is added using the part name as the property name.
+
+Another possibility (more complicated) is to have a master diagram for each type of
+vehicle, where the diagram is divided into sections and the part belongs to a given
+section. The diagram could even be comprise of three separate diagrams, one for each
+axis (X,Y,Z). The user would simply tap in the general area for each axis, and BAM the
+part location is recorded. This would require some doing and is beyond my abilities
+at the moment.
+
 Replacement Part {
  vendor: 'RockAuto.com',
  purchasePrice: 26.31,
+ dateInstalled: (Date drawn from Service Record),
+ dateOfFailure: (Date drawn from future Repair Issue),
+ odometerAtInstallation: (Number drawn from Service Record),
+ odometerAtFailure: (Number drawn from future Repair Issue),
  
+ sideOfVehicle: 'LH',
  
-
-
-
 }
-
-
 
 * */

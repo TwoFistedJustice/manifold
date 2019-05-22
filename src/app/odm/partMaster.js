@@ -29,6 +29,8 @@ ___________  MASTER PART__________________
 * It should have a compatible vehicles list : Object{make/model/year}
 * It should have a collection of fitment notes : Objects{ make/model/year, description"}\
 *   - Note make/model/year duplication - solve by new data store??? - mission creep!
+*  It should have a collection of Failure Notes
+*    ("the rubber boot broke", "the rubber bushing wore out", "the temperature sensor went bad", "incorrect installation")
 *  It should have an accuracy rating for the user to judge the accuracy of the description.
 *    - if the accuracy falls below a threshold, an alert should be generated and somebody
 *      maybe anybody, should be allowed to edit the details.
