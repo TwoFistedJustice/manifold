@@ -23,8 +23,8 @@
 *    'system': system in which the part belongs, i.e. 'steering', 'brakes', 'HVAC', etc.
 *      - may be derived from some other super-schema (but probably won't be)
 *
-*
-  **************************************************************
+___________  MASTER PART__________________
+
 * It should have properties editable by a user as well as properties pulled from a data store.
 *
 *  Immutable Properties - May be entered by a user,
@@ -49,8 +49,22 @@
 * It should have a compatible vehicles list : Object{make/model/year}
 * It should have a collection of fitment notes : Objects{ make/model/year, description"}\
 *   - Note make/model/year duplication - solve by new data store??? - mission creep!
+*  It should have an accuracy rating for the user to judge the accuracy of the description.
+*    - if the accuracy falls below a threshold, an alert should be generated and somebody
+*      maybe anybody, should be allowed to edit the details.
+*      - It could be if someone rates it less than completely accurate they are prompted to
+*       detail what is wrong. it could be that the displayed fields are displayed as a checklist
+*       and the user can check which fields are inaccurate, then be allowed to add a short text
+*       description of the problem.
 *
-
+*
+*
+ __________________REPLACEMENT PART______________________________
+ * When a replacement part is added to a repair issue it MUST have access to a Master Part
+ * When the replacment part is displayed to the user it will display data pulled from
+ * the master part. To the end user it should appear as if they are a single object. To
+ * the dev they should be distinct objects.
+ 
 *  Mutable Properties - User input only
 *  ----------------------------------------------------------
 *  It should record where it was purchases
