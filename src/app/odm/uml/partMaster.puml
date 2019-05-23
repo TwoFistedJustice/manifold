@@ -6,14 +6,18 @@ title Master Part Schema (partMaster.js)
 class MasterPart{
 {field}**Fields**
 **//Immutable Properties//**
-brand: String
 manufacturerPartNumber: String
+brand: String
 system: String
-requiresPrevailingTorqueNut: Boolean
-replacementFastenersAreProvided: Boolean
+description: String
 recommendedLubricant: String
-recommendedThreadLocker: String
-recommendedTorque: Object{}
+fasteners: Object
+userRating: Object
+accuracyRating: Object
+compatibleVehicles: Object
+fitmentNotes: Object
+failureNotes: Object
+
 
 **//Cumulative Properties//**
 userRating: Object
@@ -38,14 +42,98 @@ sumOfAllRatings: Number
 countOfRatings: Number
 }
 
-MasterPart o-- userRating
+
+object fasteners{
+fastenerN: Object
+fastenerN+1: Object
+fastenerN+2: Object
+...
+}
+
+object fastenerN {
+ isPrevailingTorqueNut: Boolean
+ recommendedThreadLocker: String
+ isIncluded: Boolean
+ torque: Object{}
+ measures: Object{}
+}
+
+object torque {
+  poundInches: Number
+  poundFeet: Number
+  newtonMeters: Number
+}
+
+
+object measures{
+ system: String (Metric or SAE)
+ external: Number
+ thread: Number
+ threadPitch: Number
+}
+
+
+object userRating {
+ averageRating: Number,
+ numberOfRatings: Number
+}
+
+object accuracyRating {
+averageRating: Number,
+ numberOfRatings: Number
+}
+
+object compatibleVehicles {
+
+}
+
+object fitmentNotes {
+ collection of notes
+}
+
+object failureNotes {
+ collection of notes
+}
+
+
+
+
 MasterPart ... recommendedTorque
+MasterPart ... fasteners
+fasteners ... fastenerN
+fastenerN ... torque
+fastenerN ... measures
+
+MasterPart ---o userRating
+MasterPart ---o accuracyRating
+MasterPart ---o compatibleVehicles
+MasterPart ---o fitmentNotes
+MasterPart ---o failureNotes
 
 
 note as N1
-  Ratings will be accumulated
-  from user input of Replacement Part
+  accumulated from
+  Replacement Parts
 end note
-N1 -left-> userRating
+
+note as N2
+ accumulated from
+ Repair Issues
+end note
+
+note as N3
+ accumulated from
+ Service Reports
+end note
+
+note as N4
+ users input specially
+end note
+
+
+N1 -up-> userRating
+N2 -up-> failureNotes
+N3 -up-> fitmentNotes
+N4 -up-> accuracyRating
 
 @enduml
