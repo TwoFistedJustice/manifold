@@ -131,29 +131,51 @@ a given vehicle type. A car for example could have Suspension Front Right and Su
 A motorcycle might also have that, or it might have a unishock type suspension, so the ability to handle
 that kind of variance needs to be built in from the start.
 
-Part Positioning - to help find non-intuitively placed parts
-let the user choose a position,
-(engine compartment, wheel well, undercarriage, passenger compartment, exterior)
-(front, rear, transverse middle)
-(right, left, medial middle)
 
 
 We could also have a 'generic' car, motorcycle, boat, etc which would have a basic set of systems
 and positions laid out already. Then if users want more nuance, they can extend it... that seems
 like it would be really hard to code...
 
+Maybe an easier approach would be to have a property on the master part that records the number
+of identical parts on given vehicle as part of the compatible vehicles collection.
+{
+ idOfCompatibleVehicle: ObjectId,
+ numberOfIdenticalPartsOnVehicle: 2
+}
+
+
+OR what if instead of having a complicated 'car model' we just require the user to choose the
+location and system on the car then when necessary compare the location/system and let the user
+choose to edit a part later. That will still get occasional duplicates, but since most users
+will want accurate information, the vast majority of the data should be accurate and at the same time
+there shouldn't be so many parts showing up that the user is turned off to using the product. And
+because there are required installation dates, it should be easy for users to correct data entry
+errors later.
+
+
+
+Part Positioning - to help find non-intuitively placed parts
+Useful for Replacement Parts. Not so much Master Parts because some parts can install in multiple locations.
+let the user choose a position,
+(engine compartment, wheel well, undercarriage, passenger compartment, exterior)
+(front, rear, transverse (lengthwise) middle )
+(right, left, medial (widthwise) middle )
 
 
 Replacement Part {
+ partId: ObjectId of Master Part,
  vendor: 'RockAuto.com',
  purchasePrice: 26.31,
- dateInstalled: (Date drawn from Service Record),
- dateOfFailure: (Date drawn from future Repair Issue),
- odometerAtInstallation: (Number drawn from Service Record),
- odometerAtFailure: (Number drawn from future Repair Issue),
- 
- sideOfVehicle: 'LH',
- 
+ dateInstalled: Date (drawn from Service Record),
+ odometerAtInstallation: Number (drawn from Service Record),
+ dateOfFailure: Date (drawn from future Repair Issue),
+ odometerAtFailure: Number (drawn from future Repair Issue),
+ location: {
+   area: 'wheel well',
+   side: 'right',
+   end: 'rear'
+ }
 }
 
 * */
