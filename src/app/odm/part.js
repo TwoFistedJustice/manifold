@@ -11,7 +11,7 @@
 *
 ___________  MASTER PART__________________
 
-There should be only ONE of any Master Part. Each is unique according to the
+There should be only ONE (in the entire DB) of any Master Part. Each is unique according to the
 Manufacturer Part Number (MPN) - as determined by the actual Manufacturer (examples Moog, Cardone).
 In this case Manufacturer means the brand name, not who actually melted the metal and
 cast it into a car part.
@@ -125,6 +125,14 @@ section. The diagram could even be comprise of three separate diagrams, one for 
 axis (X,Y,Z). The user would simply tap in the general area for each axis, and BAM the
 part location is recorded. This would require some doing and is beyond my abilities
 at the moment.
+
+Another, easier to implement way might be to simply list out the various component systems in
+a given vehicle type. A car for example could have Suspension Front Right and Suspension Front Left.
+A motorcycle might also have that, or it might have a unishock type suspension, so the ability to handle
+that kind of variance needs to be built in from the start.
+
+
+
 
 Replacement Part {
  vendor: 'RockAuto.com',
