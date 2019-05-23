@@ -131,6 +131,16 @@ a given vehicle type. A car for example could have Suspension Front Right and Su
 A motorcycle might also have that, or it might have a unishock type suspension, so the ability to handle
 that kind of variance needs to be built in from the start.
 
+Part Positioning - to help find non-intuitively placed parts
+let the user choose a position,
+(engine compartment, wheel well, undercarriage, passenger compartment, exterior)
+(front, rear, transverse middle)
+(right, left, medial middle)
+
+
+We could also have a 'generic' car, motorcycle, boat, etc which would have a basic set of systems
+and positions laid out already. Then if users want more nuance, they can extend it... that seems
+like it would be really hard to code...
 
 
 
