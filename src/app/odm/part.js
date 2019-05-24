@@ -159,8 +159,8 @@ Part Positioning - to help find non-intuitively placed parts
 Useful for Replacement Parts. Not so much Master Parts because some parts can install in multiple locations.
 let the user choose a position,
 (engine compartment, wheel well, undercarriage, passenger compartment, exterior)
-(front, rear, transverse (lengthwise) middle )
-(right, left, medial (widthwise) middle )
+(front, rear, transverse (lengthwise, front/back) middle )
+(right, left, medial (widthwise, left/right) middle )
 
 
 Replacement Part {
