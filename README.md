@@ -48,6 +48,11 @@ Branch master should occasionally be PULLed in to branch uml. But the reverse is
 NOT true. Need to find way to exclude UML folders from production so they can be
 used as references while working in other branches.
 
+# The minimal first version
+Before coding out a big complicated unwieldly beast, (which is what it will be if we try to build
+it all at once) we'll just code a minimal version: Vehicle, a Repair Issue, a Master Part, 
+a Replacement Part. From there we build a Service Report.   
+
 
 # Stack - Initial
 Node, Express, Mongo, Postman
