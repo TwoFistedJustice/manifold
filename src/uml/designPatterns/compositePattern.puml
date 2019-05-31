@@ -1,0 +1,36 @@
+@startmindmap
+
+title Composite architecture: Repair Project Example
+
+
++ Project: Rebuild Front Suspension
+++ Issue: Replace lower control arm
+
+++ Project: Replace tie rods
++++ Project: RH side
+++++ Issue: Replace Inner tie rod
+++++ Issue: Replace Outer tie rod
++++ Project: LH side
+++++ Issue: Replace Inner tie rod
+++++ Issue: Replace Outer tie rod
++++ Project: Bleed power steering
+
+++ Project: Replace wheel bearings
++++ Project: LH side
+++++ Issue: Replace bearing
+++++ Issue: Replace hub
+
++++ Project: RH side
+++++ Issue: Replace bearing
+++++ Issue: Replace hub
+
+++ Project: Replace brakes
++++ Project: LH side
+++++ Issue: Replace rotor
+++++ Issue: Replace pads
++++ Project: RH side
+++++ Issue: Replace rotor
+++++ Issue: Replace pads
++++ Issue: Bleed brakes
+
+@endmindmap
